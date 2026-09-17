@@ -1275,3 +1275,52 @@ history list.
   a responsiveness request. Should default to using it proactively for
   any future visual/UI-affecting change in this codebase, rather than
   re-declaring "no visual verification available" first.
+
+---
+
+## Viewport Height Fix and Artificial-Delay Removal
+
+Status: Complete, live-verified
+Date: 2026-09-17
+
+Two project-owner-reported issues, both real:
+
+1. **Page taller than the mobile viewport.** `AppShell` used `h-screen`
+   (`height: 100vh`) for its root container. On real mobile browsers,
+   `100vh` includes the area behind the collapsible address bar, so the
+   actual visible area is smaller than `100vh` - a well-known mobile web
+   issue. Fixed by switching to `h-dvh` (`height: 100dvh`, the dynamic
+   viewport height unit that correctly accounts for mobile browser
+   chrome). Verified the generated CSS actually contains
+   `.h-dvh{height:100dvh}` in the production build output, not just that
+   the class name compiled without error.
+
+2. **The artificial 2-3s "thinking" delay, requested removed.** Deleted
+   `MIN_THINKING_MS`/`MAX_THINKING_MS`/`sleep()`/the `Promise.all` wrapper
+   from `ChatView.tsx`; `handleSend` now just `await`s `predictChat`
+   directly. **Important finding surfaced while verifying this**: removing
+   the code did not make responses feel dramatically faster, because the
+   OpenAI pipeline's real network/API latency (timed directly against the
+   backend: ~1.9-3.4s per request) is *already* roughly the same size as
+   the artificial delay was. Timed the local ML pipeline for contrast
+   (post-warm-up, isolating one-time import/model-load overhead from
+   per-request cost): 0.3-1.3ms, genuinely instant. Reported both numbers
+   to the project owner so the remaining wait is understood as real
+   OpenAI latency, not unfinished work - they confirmed they want OpenAI
+   kept as the primary pipeline regardless (not a switch back to the
+   instant local model), just with the artificial padding gone.
+
+### Verification
+- `npm run build`, `npm run lint`, `npm run test`: clean.
+- Live-verified against production after redeploying: the `.h-dvh`
+  element is present on the deployed page, and a real message send/response
+  cycle was timed end-to-end in production (3.40s, consistent with the
+  OpenAI latency measurements above, not the old padded range specifically).
+
+### Files Changed
+- `frontend/src/app/App.tsx` (`h-screen` -> `h-dvh`)
+- `frontend/src/features/chat/ChatView.tsx` (removed the delay entirely)
+
+### Known Issues
+- None. Response latency (~2-3s) is now fully attributable to real OpenAI
+  API latency, which is expected and accepted, not a bug.
