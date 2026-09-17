@@ -1,0 +1,27 @@
+{
+  "total_messages": 9460,
+  "language_distribution": {
+    "Yoruba": 4617,
+    "English": 4327,
+    "Mixed": 516
+  },
+  "unique_intents": 150,
+  "examples_per_intent": {
+    "min": 53,
+    "max": 71,
+    "mean": 63.07,
+    "median": 63.0,
+    "std": 3.5
+  },
+  "train_test_split": {
+    "training_messages": 7568,
+    "testing_messages": 1892,
+    "test_size": 0.2,
+    "stratified": true,
+    "random_state": 42
+  },
+  "source_dataset": {
+    "raw_sentence_pairs": 411408,
+    "mined_real_examples": 88
+  }
+}

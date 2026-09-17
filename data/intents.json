@@ -1,0 +1,1052 @@
+{
+  "greeting": {
+    "category": "General Conversation",
+    "description": "User greets the chatbot",
+    "response_english": "Hello! How can I help you?",
+    "response_yoruba": "Ẹ káàárọ̀! Báwo ni mo ṣe lè ràn ẹ́ lọ́wọ́?",
+    "response_mixed": "Hello! Báwo ni mo ṣe lè ràn ẹ́ lọ́wọ́?"
+  },
+  "good_morning": {
+    "category": "General Conversation",
+    "description": "User says good morning",
+    "response_english": "Good morning! I hope you have a wonderful day.",
+    "response_yoruba": "Ẹ káàárọ̀ o! Mo fẹ́ kí o ní ọjọ́ tó dára.",
+    "response_mixed": "Good morning! Mo fẹ́ kí o ní ọjọ́ tó dára."
+  },
+  "good_afternoon": {
+    "category": "General Conversation",
+    "description": "User says good afternoon",
+    "response_english": "Good afternoon! How is your day going so far?",
+    "response_yoruba": "Ẹ káàsán o! Báwo ni ọjọ́ rẹ ti n lọ?",
+    "response_mixed": "Good afternoon! Báwo ni ọjọ́ rẹ ti n lọ?"
+  },
+  "good_evening": {
+    "category": "General Conversation",
+    "description": "User says good evening",
+    "response_english": "Good evening! I hope you had a good day.",
+    "response_yoruba": "Ẹ kúùrọ̀lẹ́ o! Mo fẹ́ ki ọjọ́ rẹ ti dára.",
+    "response_mixed": "Good evening! Mo fẹ́ ki ọjọ́ rẹ ti dára."
+  },
+  "good_night": {
+    "category": "General Conversation",
+    "description": "User says good night",
+    "response_english": "Good night! Sleep well and take care.",
+    "response_yoruba": "Kú alẹ́ o! Ẹ sùn dáadáa, ẹ ṣọ́ra.",
+    "response_mixed": "Good night! Ẹ sùn dáadáa, ẹ ṣọ́ra."
+  },
+  "goodbye": {
+    "category": "General Conversation",
+    "description": "User says goodbye",
+    "response_english": "Goodbye! Feel free to come back anytime.",
+    "response_yoruba": "Ó dàbọ̀ o! Ẹ padà wá nígbàkigbà tí ẹ bá fẹ́.",
+    "response_mixed": "Goodbye! Ẹ padà wá nígbàkigbà tí ẹ bá fẹ́."
+  },
+  "farewell": {
+    "category": "General Conversation",
+    "description": "User bids a warm farewell",
+    "response_english": "Take care! It was nice talking with you.",
+    "response_yoruba": "Ẹ ṣọ́ra o! Inú mi dùn láti bá ọ sọ̀rọ̀.",
+    "response_mixed": "Take care! Inú mi dùn láti bá ọ sọ̀rọ̀."
+  },
+  "how_are_you": {
+    "category": "General Conversation",
+    "description": "User asks how the bot is doing",
+    "response_english": "I'm doing great, thank you for asking! How about you?",
+    "response_yoruba": "Àlàáfíà ni, ẹ ṣé fún bíbéèrè! Ẹ nkọ́?",
+    "response_mixed": "I'm doing great! Ẹ nkọ́, ṣé àlàáfíà ni?"
+  },
+  "thanks": {
+    "category": "General Conversation",
+    "description": "User expresses thanks",
+    "response_english": "You're welcome! I'm happy I could help.",
+    "response_yoruba": "Kò tọ́pá! Inú mi dùn pé mo lè ràn ẹ́ lọ́wọ́.",
+    "response_mixed": "You're welcome! Inú mi dùn pé mo lè ràn ẹ́ lọ́wọ́."
+  },
+  "apology": {
+    "category": "General Conversation",
+    "description": "User apologises for something",
+    "response_english": "No worries at all, it's completely fine.",
+    "response_yoruba": "Kò sí ìṣòro, ohun gbogbo dáa.",
+    "response_mixed": "No worries at all, ohun gbogbo dáa."
+  },
+  "welcome": {
+    "category": "General Conversation",
+    "description": "Bot or user acknowledges a you're-welcome style exchange",
+    "response_english": "Glad to be of help whenever you need me.",
+    "response_yoruba": "Inú mi máa n dùn láti ràn ẹ lọ́wọ́ nígbàkigbà.",
+    "response_mixed": "Glad to help! Nígbàkigbà tí o bá nílò mi, mo wà."
+  },
+  "agreement": {
+    "category": "General Conversation",
+    "description": "User agrees with something",
+    "response_english": "Great, I'm glad we're on the same page.",
+    "response_yoruba": "Ó dáa, inú mi dùn pé a fohùn ṣọ̀kan.",
+    "response_mixed": "Great! A fohùn ṣọ̀kan gan an."
+  },
+  "disagreement": {
+    "category": "General Conversation",
+    "description": "User disagrees with something",
+    "response_english": "That's alright, thanks for sharing your view.",
+    "response_yoruba": "Kò sí ìṣòro, ẹ ṣé fún pínpín èrò yín.",
+    "response_mixed": "That's alright! Ẹ ṣé fún pínpín èrò yín."
+  },
+  "confirmation": {
+    "category": "General Conversation",
+    "description": "User confirms an action or statement",
+    "response_english": "Confirmed. I'll proceed with that right away.",
+    "response_yoruba": "Ó dájú. Màá tẹ̀síwájú pẹ̀lú rẹ̀ báyìí.",
+    "response_mixed": "Confirmed! Màá tẹ̀síwájú báyìí."
+  },
+  "denial": {
+    "category": "General Conversation",
+    "description": "User denies something",
+    "response_english": "Understood, thank you for clarifying that.",
+    "response_yoruba": "Mo yé mi, ẹ ṣé fún ṣíṣe àlàyé náà.",
+    "response_mixed": "Understood! Ẹ ṣé fún ṣíṣe àlàyé náà."
+  },
+  "casual_conversation": {
+    "category": "General Conversation",
+    "description": "Small talk / casual chit-chat",
+    "response_english": "Not much, just here ready to chat with you!",
+    "response_yoruba": "Kò sí púpọ̀, mo wà níbí ṣetán láti bá ọ sọ̀rọ̀!",
+    "response_mixed": "Not much, mo wà níbí ṣetán láti bá ọ sọ̀rọ̀!"
+  },
+  "start_conversation": {
+    "category": "General Conversation",
+    "description": "User wants to start chatting",
+    "response_english": "Of course! I'm all ears, let's talk.",
+    "response_yoruba": "Dájúdájú! Mo ti ṣetán, ẹ jẹ́ ká sọ̀rọ̀.",
+    "response_mixed": "Of course! Ẹ jẹ́ ká sọ̀rọ̀."
+  },
+  "continue_conversation": {
+    "category": "General Conversation",
+    "description": "User wants to continue an earlier topic",
+    "response_english": "Sure, let's pick up right where we left off.",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká tẹ̀síwájú láti ibi tá a dá dúró.",
+    "response_mixed": "Sure! Ẹ jẹ́ ká tẹ̀síwájú láti ibi tá a dá dúró."
+  },
+  "congratulations": {
+    "category": "General Conversation",
+    "description": "User is being congratulated or congratulates",
+    "response_english": "Congratulations! That's a wonderful achievement.",
+    "response_yoruba": "Ẹ kú oríire! Àṣeyọrí tó dára gan an ni.",
+    "response_mixed": "Congratulations! Àṣeyọrí tó dára gan an ni."
+  },
+  "encouragement": {
+    "category": "General Conversation",
+    "description": "User seeks or offers encouragement",
+    "response_english": "You are doing great, keep pushing forward, you've got this!",
+    "response_yoruba": "O n ṣe dáadáa, máa tẹ̀síwájú, o lè ṣe é!",
+    "response_mixed": "You are doing great! O lè ṣe é, máa tẹ̀síwájú!"
+  },
+  "ask_bot_name": {
+    "category": "Chatbot Interaction",
+    "description": "User asks the name of the chatbot",
+    "response_english": "My name is Raph, your intelligent assistant.",
+    "response_yoruba": "Orúkọ mi ni Raph, olùrànlọ́wọ́ rẹ.",
+    "response_mixed": "My name is Raph, olùrànlọ́wọ́ rẹ."
+  },
+  "ask_bot_identity": {
+    "category": "Chatbot Interaction",
+    "description": "User asks what the bot is",
+    "response_english": "I am a computer program designed to chat and assist you.",
+    "response_yoruba": "Ẹ̀rọ kọ̀mpútà ni mí, tí a ṣe láti bá ọ sọ̀rọ̀ kí n sì ràn ọ́ lọ́wọ́.",
+    "response_mixed": "I am a computer program, tí a ṣe láti ràn ọ́ lọ́wọ́."
+  },
+  "ask_bot_creator": {
+    "category": "Chatbot Interaction",
+    "description": "User asks who created the bot",
+    "response_english": "I was created by a student as part of a final year project.",
+    "response_yoruba": "Akẹ́kọ̀ọ́ kan ni ó dá mi gẹ́gẹ́ bí iṣẹ́ akanṣe ìkẹ́yìn.",
+    "response_mixed": "I was created by a student, gẹ́gẹ́ bí iṣẹ́ akanṣe ìkẹ́yìn."
+  },
+  "ask_bot_purpose": {
+    "category": "Chatbot Interaction",
+    "description": "User asks the purpose of the bot",
+    "response_english": "My purpose is to understand your questions and help you in English or Yoruba.",
+    "response_yoruba": "Ète mi ni láti yé ìbéèrè rẹ kí n sì ràn ọ́ lọ́wọ́ ní èdè Gẹ̀ẹ́sì tàbí Yorùbá.",
+    "response_mixed": "My purpose is to help you ní èdè Gẹ̀ẹ́sì tàbí Yorùbá."
+  },
+  "ask_bot_capabilities": {
+    "category": "Chatbot Interaction",
+    "description": "User asks what the bot can do",
+    "response_english": "I can help you with questions, information, explanations, and other simple requests.",
+    "response_yoruba": "Mo lè ràn ọ́ lọ́wọ́ pẹ̀lú ìbéèrè, ìsọfúnni, àlàyé, àti àwọn ìbéèrè mìíràn tó rọrùn.",
+    "response_mixed": "I can help you with questions and information, ní èdè Gẹ̀ẹ́sì àti Yorùbá."
+  },
+  "ask_bot_language": {
+    "category": "Chatbot Interaction",
+    "description": "User asks which languages the bot understands",
+    "response_english": "I understand both English and Yoruba, and I can reply in either.",
+    "response_yoruba": "Mo gbọ́ èdè Gẹ̀ẹ́sì àti Yorùbá, mo sì lè dá ọ lóhùn ní èyíkéyìí nínú wọn.",
+    "response_mixed": "I understand English and Yorùbá, mo sì lè dá ọ lóhùn nínú wọn."
+  },
+  "ask_bot_location": {
+    "category": "Chatbot Interaction",
+    "description": "User asks where the bot is located",
+    "response_english": "I don't live anywhere physical, I exist inside this notebook to chat with you.",
+    "response_yoruba": "N kò gbé ibikíbi ní ti gidi, inú kọ̀mpútà yìí ni mo ti wà láti bá ọ sọ̀rọ̀.",
+    "response_mixed": "I exist inside this notebook, láti bá ọ sọ̀rọ̀."
+  },
+  "ask_bot_age": {
+    "category": "Chatbot Interaction",
+    "description": "User asks the age of the bot",
+    "response_english": "I don't have an age like a person, I was built recently for this project.",
+    "response_yoruba": "N kò ní ọjọ́ orí bí ènìyàn, láìpẹ́ yìí ni a kọ́ mi fún iṣẹ́ akanṣe yìí.",
+    "response_mixed": "I don't have an age like a person, láìpẹ́ yìí ni a kọ́ mi."
+  },
+  "ask_bot_gender": {
+    "category": "Chatbot Interaction",
+    "description": "User asks the gender of the bot",
+    "response_english": "I don't have a gender, I'm simply a computer program.",
+    "response_yoruba": "N kò ní ìbálòpọ̀, ẹ̀rọ kọ̀mpútà lásán ni mí.",
+    "response_mixed": "I don't have a gender, ẹ̀rọ kọ̀mpútà lásán ni mí."
+  },
+  "ask_bot_favourite": {
+    "category": "Chatbot Interaction",
+    "description": "User asks about the favourite thing of the bot",
+    "response_english": "I don't eat or see colours, but I do enjoy helping you with your questions!",
+    "response_yoruba": "N kò jẹun tàbí rí àwọ̀, ṣùgbọ́n inú mi máa n dùn láti ràn ọ́ lọ́wọ́ pẹ̀lú ìbéèrè rẹ!",
+    "response_mixed": "I don't eat or see colours, ṣùgbọ́n inú mi máa n dùn láti ràn ọ́ lọ́wọ́!"
+  },
+  "ask_bot_help": {
+    "category": "Chatbot Interaction",
+    "description": "User directly asks the bot for help in general",
+    "response_english": "Of course, I'm here and ready to help you.",
+    "response_yoruba": "Dájúdájú, mo wà níbí, mo sì ti ṣetán láti ràn ọ́ lọ́wọ́.",
+    "response_mixed": "Of course! Mo ti ṣetán láti ràn ọ́ lọ́wọ́."
+  },
+  "ask_bot_feedback": {
+    "category": "Chatbot Interaction",
+    "description": "User gives or asks for feedback about the bot",
+    "response_english": "Thank you for the feedback, I really appreciate it!",
+    "response_yoruba": "Ẹ ṣé fún èrò yín, mo dúpẹ́ gan an!",
+    "response_mixed": "Thank you for the feedback! Mo dúpẹ́ gan an."
+  },
+  "ask_bot_limitations": {
+    "category": "Chatbot Interaction",
+    "description": "User asks what the bot cannot do",
+    "response_english": "I can only recognise the 150 intents I was trained on, so very unusual questions may confuse me.",
+    "response_yoruba": "Mo lè mọ̀ nípa àwọn kókó ọgọ́sàn-ún àti àádọ́ta [150] tí a fi kọ́ mi, nítorí náà ìbéèrè tó ṣàjèjì lè da mí láàmú.",
+    "response_mixed": "I can only recognise the intents I was trained on, tó bá ṣàjèjì, ó lè da mí láàmú."
+  },
+  "ask_bot_technology": {
+    "category": "Chatbot Interaction",
+    "description": "User asks what technology powers the bot",
+    "response_english": "I use TF-IDF for text features and Logistic Regression to predict your intent.",
+    "response_yoruba": "Mo ń lo TF-IDF fún àwọn èdè, mo sì ń lo Logistic Regression láti mọ ète ọ̀rọ̀ rẹ.",
+    "response_mixed": "I use TF-IDF and Logistic Regression láti mọ ète ọ̀rọ̀ rẹ."
+  },
+  "ask_bot_function": {
+    "category": "Chatbot Interaction",
+    "description": "User asks how the bot functions internally",
+    "response_english": "I clean and process your text, then use a trained model to predict your intent and pick a matching response.",
+    "response_yoruba": "Mo máa ń wẹ̀ àti ṣe àyẹ̀wò ọ̀rọ̀ rẹ, kí n tó lo àwòṣe tí a kọ́ láti mọ ète rẹ àti yan èsì tó bá a mu.",
+    "response_mixed": "I process your text, then predict your intent láti yan èsì tó bá a mu."
+  },
+  "friendship": {
+    "category": "Social",
+    "description": "User talks about friendship",
+    "response_english": "Good friendships take patience and honesty, I hope things get better with your friend.",
+    "response_yoruba": "Ọ̀rẹ́ tó dára nílò sùúrù àti òtítọ́, mo fẹ́ kí nǹkan dára sí i láàrin ẹ àti ọ̀rẹ́ rẹ.",
+    "response_mixed": "Good friendships take patience and honesty, mo fẹ́ kí nǹkan dára sí i."
+  },
+  "relationship": {
+    "category": "Social",
+    "description": "User talks about a romantic or personal relationship",
+    "response_english": "Relationships need open communication, try to talk honestly with your partner.",
+    "response_yoruba": "Ìbáṣepọ̀ nílò ìbánisọ̀rọ̀ tó ṣí sílẹ̀, gbìyànjú láti bá alábàáṣiṣẹ́ rẹ sọ̀rọ̀ ní òtítọ́.",
+    "response_mixed": "Relationships need open communication, gbìyànjú láti sọ̀rọ̀ ní òtítọ́."
+  },
+  "family": {
+    "category": "Social",
+    "description": "User talks about family",
+    "response_english": "Family matters can be tough, I hope you find peace and understanding soon.",
+    "response_yoruba": "Ọ̀rọ̀ ìdílé lè le, mo fẹ́ kí o rí àlàáfíà àti òye láìpẹ́.",
+    "response_mixed": "Family matters can be tough, mo fẹ́ kí o rí àlàáfíà láìpẹ́."
+  },
+  "love": {
+    "category": "Social",
+    "description": "User talks about love",
+    "response_english": "Love can be beautiful and scary at once, be honest and patient with your feelings.",
+    "response_yoruba": "Ìfẹ́ lè dára kó sì tún ní ìpayà, jẹ́ olóòtítọ́ kí o sì ní sùúrù pẹ̀lú ìmọ̀lára rẹ.",
+    "response_mixed": "Love can be beautiful and scary, jẹ́ olóòtítọ́ kí o sì ní sùúrù."
+  },
+  "motivation": {
+    "category": "Social",
+    "description": "User seeks general motivation",
+    "response_english": "Every small step counts, take it one step at a time and you'll get there.",
+    "response_yoruba": "Ìgbésẹ̀ kékeré kọ̀ọ̀kan ṣe pàtàkì, máa lọ ní kẹ̀rẹ̀kẹ̀rẹ̀, o ó dé ibi tí o fẹ́.",
+    "response_mixed": "Every small step counts, máa lọ ní kẹ̀rẹ̀kẹ̀rẹ̀."
+  },
+  "personal_advice": {
+    "category": "Social",
+    "description": "User asks for personal life advice",
+    "response_english": "Take your time, think it through carefully, and choose what feels right for you.",
+    "response_yoruba": "Fi àkókò ro ọ̀rọ̀ náà yẹ̀wò dáadáa, kí o sì yan ohun tí ó bára rẹ mu.",
+    "response_mixed": "Take your time and think it through, kí o yan ohun tí ó bára rẹ mu."
+  },
+  "complaint": {
+    "category": "Social",
+    "description": "User raises a complaint",
+    "response_english": "I'm sorry for the inconvenience, please tell me more so I can note your concern.",
+    "response_yoruba": "Ẹ má bínú fún ìdààmú náà, ẹ jọ̀ọ́ ṣàlàyé síwájú sí i kí n lè kọ ọ̀rọ̀ rẹ sílẹ̀.",
+    "response_mixed": "I'm sorry for the inconvenience, ẹ jọ̀ọ́ ṣàlàyé síwájú sí i."
+  },
+  "technical_problem": {
+    "category": "Social",
+    "description": "User reports a technical problem",
+    "response_english": "Let's sort this out, please describe the error so I can understand the problem better.",
+    "response_yoruba": "Ẹ jẹ́ ká yanjú rẹ̀, ẹ jọ̀ọ́ ṣàlàyé àṣìṣe náà kí n lè yé ìṣòro náà dáadáa.",
+    "response_mixed": "Let's sort this out, ẹ jọ̀ọ́ ṣàlàyé àṣìṣe náà."
+  },
+  "cannot_understand": {
+    "category": "Social",
+    "description": "User states the bot did not understand or they are confused",
+    "response_english": "Sorry for the confusion, let me try to explain that more simply.",
+    "response_yoruba": "Ẹ má bínú fún ìdàrúdàpọ̀ náà, jẹ́ kí n gbìyànjú láti ṣàlàyé ní ọ̀nà tó rọrùn síi.",
+    "response_mixed": "Sorry for the confusion, jẹ́ kí n ṣàlàyé ní ọ̀nà tó rọrùn síi."
+  },
+  "unknown": {
+    "category": "Social",
+    "description": "Fallback intent for unclear or unmatched messages",
+    "response_english": "Sorry, I'm not quite sure I understood that. Could you rephrase it?",
+    "response_yoruba": "Ẹ má bínú, n kò ní ìdánilójú pé mo yé ohun tí ẹ sọ. Ṣé ẹ lè sọ ọ́ ní ọ̀nà mìíràn?",
+    "response_mixed": "Sorry, I'm not sure I understood that. Ṣé ẹ lè sọ ọ́ ní ọ̀nà mìíràn?"
+  },
+  "general_question": {
+    "category": "Questions/Requests",
+    "description": "User asks for an answer to my question",
+    "response_english": "Sure, let me help you with an answer to my question.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìdáhùn sí ìbéèrè mi.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìdáhùn sí ìbéèrè mi."
+  },
+  "asking_for_information": {
+    "category": "Questions/Requests",
+    "description": "User asks for some information",
+    "response_english": "Sure, let me help you with some information.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìsọfúnni.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìsọfúnni."
+  },
+  "asking_for_definition": {
+    "category": "Questions/Requests",
+    "description": "User asks for a definition",
+    "response_english": "Sure, let me help you with a definition.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìtumọ̀ ọ̀rọ̀.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìtumọ̀ ọ̀rọ̀."
+  },
+  "asking_for_explanation": {
+    "category": "Questions/Requests",
+    "description": "User asks for an explanation",
+    "response_english": "Sure, let me help you with an explanation.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àlàyé.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àlàyé."
+  },
+  "asking_for_example": {
+    "category": "Questions/Requests",
+    "description": "User asks for an example",
+    "response_english": "Sure, let me help you with an example.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àpẹẹrẹ.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àpẹẹrẹ."
+  },
+  "asking_for_details": {
+    "category": "Questions/Requests",
+    "description": "User asks for more details",
+    "response_english": "Sure, let me help you with more details.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àlàyé síwájú síi.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àlàyé síwájú síi."
+  },
+  "asking_for_clarification": {
+    "category": "Questions/Requests",
+    "description": "User asks for some clarification",
+    "response_english": "Sure, let me help you with some clarification.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àlàyé tó ṣe kedere.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àlàyé tó ṣe kedere."
+  },
+  "asking_for_summary": {
+    "category": "Questions/Requests",
+    "description": "User asks for a summary",
+    "response_english": "Sure, let me help you with a summary.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìsọníṣókí.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìsọníṣókí."
+  },
+  "asking_for_instructions": {
+    "category": "Questions/Requests",
+    "description": "User asks for instructions",
+    "response_english": "Sure, let me help you with instructions.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìtọ́ni.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìtọ́ni."
+  },
+  "asking_for_advice": {
+    "category": "Questions/Requests",
+    "description": "User asks for some advice",
+    "response_english": "Sure, let me help you with some advice.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìmọ̀ràn.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìmọ̀ràn."
+  },
+  "asking_for_recommendation": {
+    "category": "Questions/Requests",
+    "description": "User asks for a recommendation",
+    "response_english": "Sure, let me help you with a recommendation.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àbá kan.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àbá kan."
+  },
+  "asking_for_comparison": {
+    "category": "Questions/Requests",
+    "description": "User asks for a comparison",
+    "response_english": "Sure, let me help you with a comparison.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìfiwéra.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìfiwéra."
+  },
+  "asking_for_reason": {
+    "category": "Questions/Requests",
+    "description": "User asks for the reason for that",
+    "response_english": "Sure, let me help you with the reason for that.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìdí rẹ̀.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìdí rẹ̀."
+  },
+  "asking_for_opinion": {
+    "category": "Questions/Requests",
+    "description": "User asks for your honest opinion",
+    "response_english": "Sure, let me help you with your honest opinion.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú èrò rẹ ní tòótọ́.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú èrò rẹ ní tòótọ́."
+  },
+  "asking_for_meaning": {
+    "category": "Questions/Requests",
+    "description": "User asks for the meaning of that",
+    "response_english": "Sure, let me help you with the meaning of that.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìtumọ̀ rẹ̀.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìtumọ̀ rẹ̀."
+  },
+  "asking_for_fact": {
+    "category": "Questions/Requests",
+    "description": "User asks for an interesting fact",
+    "response_english": "Sure, let me help you with an interesting fact.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú òtítọ́ kan tó fanimọ́ra.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú òtítọ́ kan tó fanimọ́ra."
+  },
+  "asking_for_solution": {
+    "category": "Questions/Requests",
+    "description": "User asks for a solution to this",
+    "response_english": "Sure, let me help you with a solution to this.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ojútùú sí èyí.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ojútùú sí èyí."
+  },
+  "asking_for_description": {
+    "category": "Questions/Requests",
+    "description": "User asks for a description",
+    "response_english": "Sure, let me help you with a description.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àpèjúwe.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àpèjúwe."
+  },
+  "asking_for_steps": {
+    "category": "Questions/Requests",
+    "description": "User asks for the steps involved",
+    "response_english": "Sure, let me help you with the steps involved.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àwọn ìgbésẹ̀ tó kàn.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àwọn ìgbésẹ̀ tó kàn."
+  },
+  "asking_for_difference": {
+    "category": "Questions/Requests",
+    "description": "User asks for the difference between them",
+    "response_english": "Sure, let me help you with the difference between them.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìyàtọ̀ tó wà láàrin wọn.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìyàtọ̀ tó wà láàrin wọn."
+  },
+  "asking_for_help": {
+    "category": "Questions/Requests",
+    "description": "User asks for some help",
+    "response_english": "Sure, I'll be happy to help you.",
+    "response_yoruba": "Ó dáa, màá ràn ẹ́ lọ́wọ́.",
+    "response_mixed": "Sure! Màá ràn ẹ́ lọ́wọ́."
+  },
+  "make_request": {
+    "category": "Questions/Requests",
+    "description": "User asks for a small request",
+    "response_english": "Sure, let me help you with a small request.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìbéèrè kékeré kan.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìbéèrè kékeré kan."
+  },
+  "request_information": {
+    "category": "Questions/Requests",
+    "description": "User asks for more information",
+    "response_english": "Sure, let me help you with more information.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìsọfúnni síwájú síi.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìsọfúnni síwájú síi."
+  },
+  "request_explanation": {
+    "category": "Questions/Requests",
+    "description": "User asks for a clear explanation",
+    "response_english": "Sure, let me help you with a clear explanation.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àlàyé tó ṣe kedere.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àlàyé tó ṣe kedere."
+  },
+  "request_example": {
+    "category": "Questions/Requests",
+    "description": "User asks for a good example",
+    "response_english": "Sure, let me help you with a good example.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àpẹẹrẹ tó dára.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àpẹẹrẹ tó dára."
+  },
+  "request_instruction": {
+    "category": "Questions/Requests",
+    "description": "User asks for step by step instructions",
+    "response_english": "Sure, let me help you with step by step instructions.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìtọ́ni ní ọ̀wọ̀ọ̀wọ̀.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìtọ́ni ní ọ̀wọ̀ọ̀wọ̀."
+  },
+  "request_more_information": {
+    "category": "Questions/Requests",
+    "description": "User asks for more information on this",
+    "response_english": "Sure, let me help you with more information on this.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìsọfúnni síwájú sí i lórí èyí.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìsọfúnni síwájú sí i lórí èyí."
+  },
+  "request_clarification": {
+    "category": "Questions/Requests",
+    "description": "User asks for some clarification on this",
+    "response_english": "Sure, let me help you with some clarification on this.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àlàyé tó ṣe kedere lórí èyí.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àlàyé tó ṣe kedere lórí èyí."
+  },
+  "request_confirmation": {
+    "category": "Questions/Requests",
+    "description": "User asks for confirmation of this",
+    "response_english": "Sure, let me help you with confirmation of this.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìjẹ́rìí sí èyí.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú ìjẹ́rìí sí èyí."
+  },
+  "request_suggestion": {
+    "category": "Questions/Requests",
+    "description": "User asks for a helpful suggestion",
+    "response_english": "Sure, let me help you with a helpful suggestion.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àbá tó wúlò.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àbá tó wúlò."
+  },
+  "request_recommendation": {
+    "category": "Questions/Requests",
+    "description": "User asks for your recommendation",
+    "response_english": "Sure, let me help you with your recommendation.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àbá rẹ.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àbá rẹ."
+  },
+  "request_correction": {
+    "category": "Questions/Requests",
+    "description": "User asks for a correction",
+    "response_english": "Sure, let me help you with a correction.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àtúnṣe.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àtúnṣe."
+  },
+  "request_simplification": {
+    "category": "Questions/Requests",
+    "description": "User asks for a simpler explanation",
+    "response_english": "Sure, let me help you with a simpler explanation.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àlàyé tó rọrùn síi.",
+    "response_mixed": "Sure! Jẹ́ kí n ràn ọ́ lọ́wọ́ pẹ̀lú àlàyé tó rọrùn síi."
+  },
+  "request_repetition": {
+    "category": "Questions/Requests",
+    "description": "User asks the bot to repeat itself",
+    "response_english": "Sure, let me say that again for you.",
+    "response_yoruba": "Ó dáa, jẹ́ kí n tún un sọ fún ọ.",
+    "response_mixed": "Sure! Jẹ́ kí n tún un sọ fún ọ."
+  },
+  "request_translation": {
+    "category": "Questions/Requests",
+    "description": "User asks the bot to translate text",
+    "response_english": "I'm not built to translate between languages, but I can chat with you directly in English or Yoruba.",
+    "response_yoruba": "A kò kọ́ mi láti túmọ̀ èdè, ṣùgbọ́n mo lè bá ọ sọ̀rọ̀ tààrà ní èdè Gẹ̀ẹ́sì tàbí Yorùbá.",
+    "response_mixed": "I'm not built to translate, ṣùgbọ́n mo lè bá ọ sọ̀rọ̀ tààrà ní èdè méjèèjì."
+  },
+  "education": {
+    "category": "Topic",
+    "description": "User wants to discuss education",
+    "response_english": "Sure, let's talk about education. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ẹ̀kọ́. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about education! Kí ni o fẹ́ mọ̀?"
+  },
+  "school": {
+    "category": "Topic",
+    "description": "User wants to discuss school",
+    "response_english": "Sure, let's talk about school. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ilé-ìwé. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about school! Kí ni o fẹ́ mọ̀?"
+  },
+  "university": {
+    "category": "Topic",
+    "description": "User wants to discuss university",
+    "response_english": "Sure, let's talk about university. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa yunifásítì. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about university! Kí ni o fẹ́ mọ̀?"
+  },
+  "student": {
+    "category": "Topic",
+    "description": "User wants to discuss student life",
+    "response_english": "Sure, let's talk about student life. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ìgbésí ayé akẹ́kọ̀ọ́. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about student life! Kí ni o fẹ́ mọ̀?"
+  },
+  "teacher": {
+    "category": "Topic",
+    "description": "User wants to discuss teachers",
+    "response_english": "Sure, let's talk about teachers. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa olùkọ́. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about teachers! Kí ni o fẹ́ mọ̀?"
+  },
+  "academic_question": {
+    "category": "Topic",
+    "description": "User wants to discuss an academic topic",
+    "response_english": "Sure, let's talk about an academic topic. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa kókó ẹ̀kọ́ kan. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about an academic topic! Kí ni o fẹ́ mọ̀?"
+  },
+  "homework": {
+    "category": "Topic",
+    "description": "User wants to discuss homework",
+    "response_english": "Sure, let's talk about homework. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa iṣẹ́ àṣetiléwá. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about homework! Kí ni o fẹ́ mọ̀?"
+  },
+  "assignment": {
+    "category": "Topic",
+    "description": "User wants to discuss school assignments",
+    "response_english": "Sure, let's talk about school assignments. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa àwọn iṣẹ́ tí a yàn. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about school assignments! Kí ni o fẹ́ mọ̀?"
+  },
+  "research": {
+    "category": "Topic",
+    "description": "User wants to discuss research work",
+    "response_english": "Sure, let's talk about research work. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ìwádìí. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about research work! Kí ni o fẹ́ mọ̀?"
+  },
+  "project": {
+    "category": "Topic",
+    "description": "User wants to discuss school projects",
+    "response_english": "Sure, let's talk about school projects. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa iṣẹ́ akanṣe ilé-ìwé. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about school projects! Kí ni o fẹ́ mọ̀?"
+  },
+  "examination": {
+    "category": "Topic",
+    "description": "User wants to discuss examinations",
+    "response_english": "Sure, let's talk about examinations. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa àyẹ̀wò. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about examinations! Kí ni o fẹ́ mọ̀?"
+  },
+  "study_advice": {
+    "category": "Topic",
+    "description": "User wants to discuss how to study well",
+    "response_english": "Sure, let's talk about how to study well. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa bí a ṣe lè kàwé dáadáa. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about how to study well! Kí ni o fẹ́ mọ̀?"
+  },
+  "mathematics": {
+    "category": "Topic",
+    "description": "User wants to discuss mathematics",
+    "response_english": "Sure, let's talk about mathematics. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ìṣirò. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about mathematics! Kí ni o fẹ́ mọ̀?"
+  },
+  "science": {
+    "category": "Topic",
+    "description": "User wants to discuss science",
+    "response_english": "Sure, let's talk about science. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa sáyẹ́nsì. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about science! Kí ni o fẹ́ mọ̀?"
+  },
+  "computer_science": {
+    "category": "Topic",
+    "description": "User wants to discuss computer science",
+    "response_english": "Sure, let's talk about computer science. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ìmọ̀ kọ̀mpútà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about computer science! Kí ni o fẹ́ mọ̀?"
+  },
+  "technology": {
+    "category": "Topic",
+    "description": "User wants to discuss technology",
+    "response_english": "Sure, let's talk about technology. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa tẹkinọ́lọ́jì. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about technology! Kí ni o fẹ́ mọ̀?"
+  },
+  "computer": {
+    "category": "Topic",
+    "description": "User wants to discuss computers",
+    "response_english": "Sure, let's talk about computers. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa kọ̀mpútà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about computers! Kí ni o fẹ́ mọ̀?"
+  },
+  "programming": {
+    "category": "Topic",
+    "description": "User wants to discuss programming",
+    "response_english": "Sure, let's talk about programming. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa kíkọ̀wé kóòdù. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about programming! Kí ni o fẹ́ mọ̀?"
+  },
+  "software": {
+    "category": "Topic",
+    "description": "User wants to discuss software",
+    "response_english": "Sure, let's talk about software. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa sọ́fítíwéà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about software! Kí ni o fẹ́ mọ̀?"
+  },
+  "hardware": {
+    "category": "Topic",
+    "description": "User wants to discuss computer hardware",
+    "response_english": "Sure, let's talk about computer hardware. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ẹ̀yà ara kọ̀mpútà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about computer hardware! Kí ni o fẹ́ mọ̀?"
+  },
+  "internet": {
+    "category": "Topic",
+    "description": "User wants to discuss the internet",
+    "response_english": "Sure, let's talk about the internet. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa íńtánẹ́ẹ̀tì. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about the internet! Kí ni o fẹ́ mọ̀?"
+  },
+  "mobile_phone": {
+    "category": "Topic",
+    "description": "User wants to discuss mobile phones",
+    "response_english": "Sure, let's talk about mobile phones. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa fóònù alágbèéká. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about mobile phones! Kí ni o fẹ́ mọ̀?"
+  },
+  "artificial_intelligence": {
+    "category": "Topic",
+    "description": "User wants to discuss artificial intelligence",
+    "response_english": "Sure, let's talk about artificial intelligence. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ọgbọ́n atọwọ́dá. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about artificial intelligence! Kí ni o fẹ́ mọ̀?"
+  },
+  "machine_learning": {
+    "category": "Topic",
+    "description": "User wants to discuss machine learning",
+    "response_english": "Sure, let's talk about machine learning. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ẹ̀kọ́ ẹ̀rọ. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about machine learning! Kí ni o fẹ́ mọ̀?"
+  },
+  "robotics": {
+    "category": "Topic",
+    "description": "User wants to discuss robotics",
+    "response_english": "Sure, let's talk about robotics. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ẹ̀rọ amúnidọ́ṣiṣẹ́. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about robotics! Kí ni o fẹ́ mọ̀?"
+  },
+  "cybersecurity": {
+    "category": "Topic",
+    "description": "User wants to discuss cybersecurity",
+    "response_english": "Sure, let's talk about cybersecurity. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ààbò ẹ̀rọ ayélujára. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about cybersecurity! Kí ni o fẹ́ mọ̀?"
+  },
+  "social_media": {
+    "category": "Topic",
+    "description": "User wants to discuss social media",
+    "response_english": "Sure, let's talk about social media. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ilé-iṣẹ́ ìbánisọ̀rọ̀ lórí ayélujára. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about social media! Kí ni o fẹ́ mọ̀?"
+  },
+  "website": {
+    "category": "Topic",
+    "description": "User wants to discuss websites",
+    "response_english": "Sure, let's talk about websites. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ojú-òpó wẹ́ẹ̀bù. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about websites! Kí ni o fẹ́ mọ̀?"
+  },
+  "application": {
+    "category": "Topic",
+    "description": "User wants to discuss mobile apps",
+    "response_english": "Sure, let's talk about mobile apps. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa app. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about mobile apps! Kí ni o fẹ́ mọ̀?"
+  },
+  "programming_help": {
+    "category": "Topic",
+    "description": "User wants to discuss help with programming",
+    "response_english": "Sure, let's talk about help with programming. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ìrànlọ́wọ́ pẹ̀lú kíkọ̀wé kóòdù. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about help with programming! Kí ni o fẹ́ mọ̀?"
+  },
+  "weather": {
+    "category": "Topic",
+    "description": "User wants to discuss the weather",
+    "response_english": "Sure, let's talk about the weather. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ọjọ́. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about the weather! Kí ni o fẹ́ mọ̀?"
+  },
+  "time": {
+    "category": "Topic",
+    "description": "User wants to discuss the time",
+    "response_english": "Sure, let's talk about the time. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa àkókò. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about the time! Kí ni o fẹ́ mọ̀?"
+  },
+  "date": {
+    "category": "Topic",
+    "description": "User wants to discuss today's date",
+    "response_english": "Sure, let's talk about today's date. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa déètì oní. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about today's date! Kí ni o fẹ́ mọ̀?"
+  },
+  "calendar": {
+    "category": "Topic",
+    "description": "User wants to discuss the calendar",
+    "response_english": "Sure, let's talk about the calendar. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa kálẹ́ńdà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about the calendar! Kí ni o fẹ́ mọ̀?"
+  },
+  "food": {
+    "category": "Topic",
+    "description": "User wants to discuss food",
+    "response_english": "Sure, let's talk about food. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa oúnjẹ. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about food! Kí ni o fẹ́ mọ̀?"
+  },
+  "cooking": {
+    "category": "Topic",
+    "description": "User wants to discuss cooking",
+    "response_english": "Sure, let's talk about cooking. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa sísè oúnjẹ. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about cooking! Kí ni o fẹ́ mọ̀?"
+  },
+  "restaurant": {
+    "category": "Topic",
+    "description": "User wants to discuss restaurants",
+    "response_english": "Sure, let's talk about restaurants. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ilé oúnjẹ. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about restaurants! Kí ni o fẹ́ mọ̀?"
+  },
+  "shopping": {
+    "category": "Topic",
+    "description": "User wants to discuss shopping",
+    "response_english": "Sure, let's talk about shopping. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa rírajà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about shopping! Kí ni o fẹ́ mọ̀?"
+  },
+  "clothing": {
+    "category": "Topic",
+    "description": "User wants to discuss clothes",
+    "response_english": "Sure, let's talk about clothes. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa aṣọ. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about clothes! Kí ni o fẹ́ mọ̀?"
+  },
+  "travel": {
+    "category": "Topic",
+    "description": "User wants to discuss travel",
+    "response_english": "Sure, let's talk about travel. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ìrìnàjò. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about travel! Kí ni o fẹ́ mọ̀?"
+  },
+  "transportation": {
+    "category": "Topic",
+    "description": "User wants to discuss transportation",
+    "response_english": "Sure, let's talk about transportation. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ọkọ̀ ìrìnnà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about transportation! Kí ni o fẹ́ mọ̀?"
+  },
+  "directions": {
+    "category": "Topic",
+    "description": "User wants to discuss directions",
+    "response_english": "Sure, let's talk about directions. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ọ̀nà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about directions! Kí ni o fẹ́ mọ̀?"
+  },
+  "hotel": {
+    "category": "Topic",
+    "description": "User wants to discuss hotels",
+    "response_english": "Sure, let's talk about hotels. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa hótẹ́ẹ̀lì. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about hotels! Kí ni o fẹ́ mọ̀?"
+  },
+  "entertainment": {
+    "category": "Topic",
+    "description": "User wants to discuss entertainment",
+    "response_english": "Sure, let's talk about entertainment. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa eré ìnàjú. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about entertainment! Kí ni o fẹ́ mọ̀?"
+  },
+  "music": {
+    "category": "Topic",
+    "description": "User wants to discuss music",
+    "response_english": "Sure, let's talk about music. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa orin. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about music! Kí ni o fẹ́ mọ̀?"
+  },
+  "money": {
+    "category": "Topic",
+    "description": "User wants to discuss money",
+    "response_english": "Sure, let's talk about money. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa owó. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about money! Kí ni o fẹ́ mọ̀?"
+  },
+  "banking": {
+    "category": "Topic",
+    "description": "User wants to discuss banking",
+    "response_english": "Sure, let's talk about banking. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa báńkì. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about banking! Kí ni o fẹ́ mọ̀?"
+  },
+  "saving": {
+    "category": "Topic",
+    "description": "User wants to discuss saving money",
+    "response_english": "Sure, let's talk about saving money. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa fífi owó pamọ́. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about saving money! Kí ni o fẹ́ mọ̀?"
+  },
+  "budgeting": {
+    "category": "Topic",
+    "description": "User wants to discuss budgeting",
+    "response_english": "Sure, let's talk about budgeting. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ìṣètò inawo. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about budgeting! Kí ni o fẹ́ mọ̀?"
+  },
+  "business": {
+    "category": "Topic",
+    "description": "User wants to discuss business",
+    "response_english": "Sure, let's talk about business. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa òwò. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about business! Kí ni o fẹ́ mọ̀?"
+  },
+  "entrepreneurship": {
+    "category": "Topic",
+    "description": "User wants to discuss entrepreneurship",
+    "response_english": "Sure, let's talk about entrepreneurship. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa iṣòwò aládàáni. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about entrepreneurship! Kí ni o fẹ́ mọ̀?"
+  },
+  "employment": {
+    "category": "Topic",
+    "description": "User wants to discuss employment",
+    "response_english": "Sure, let's talk about employment. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa iṣẹ́ ìṣàkóso. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about employment! Kí ni o fẹ́ mọ̀?"
+  },
+  "job_search": {
+    "category": "Topic",
+    "description": "User wants to discuss job hunting",
+    "response_english": "Sure, let's talk about job hunting. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa wíwá iṣẹ́. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about job hunting! Kí ni o fẹ́ mọ̀?"
+  },
+  "career": {
+    "category": "Topic",
+    "description": "User wants to discuss career choices",
+    "response_english": "Sure, let's talk about career choices. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa yíyan iṣẹ́ ọjọ́ iwájú. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about career choices! Kí ni o fẹ́ mọ̀?"
+  },
+  "salary": {
+    "category": "Topic",
+    "description": "User wants to discuss salary",
+    "response_english": "Sure, let's talk about salary. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa owó oṣù. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about salary! Kí ni o fẹ́ mọ̀?"
+  },
+  "Nigeria": {
+    "category": "Topic",
+    "description": "User wants to discuss Nigeria",
+    "response_english": "Sure, let's talk about Nigeria. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa Nàìjíríà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about Nigeria! Kí ni o fẹ́ mọ̀?"
+  },
+  "Nigerian_culture": {
+    "category": "Topic",
+    "description": "User wants to discuss Nigerian culture",
+    "response_english": "Sure, let's talk about Nigerian culture. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa àṣà Nàìjíríà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about Nigerian culture! Kí ni o fẹ́ mọ̀?"
+  },
+  "Nigerian_history": {
+    "category": "Topic",
+    "description": "User wants to discuss Nigerian history",
+    "response_english": "Sure, let's talk about Nigerian history. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ìtàn Nàìjíríà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about Nigerian history! Kí ni o fẹ́ mọ̀?"
+  },
+  "Nigerian_geography": {
+    "category": "Topic",
+    "description": "User wants to discuss the geography of Nigeria",
+    "response_english": "Sure, let's talk about the geography of Nigeria. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ilẹ̀ Nàìjíríà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about the geography of Nigeria! Kí ni o fẹ́ mọ̀?"
+  },
+  "Nigerian_education": {
+    "category": "Topic",
+    "description": "User wants to discuss education in Nigeria",
+    "response_english": "Sure, let's talk about education in Nigeria. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ẹ̀kọ́ ní Nàìjíríà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about education in Nigeria! Kí ni o fẹ́ mọ̀?"
+  },
+  "Nigerian_business": {
+    "category": "Topic",
+    "description": "User wants to discuss business in Nigeria",
+    "response_english": "Sure, let's talk about business in Nigeria. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa òwò ní Nàìjíríà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about business in Nigeria! Kí ni o fẹ́ mọ̀?"
+  },
+  "Nigerian_food": {
+    "category": "Topic",
+    "description": "User wants to discuss Nigerian food",
+    "response_english": "Sure, let's talk about Nigerian food. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa oúnjẹ Nàìjíríà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about Nigerian food! Kí ni o fẹ́ mọ̀?"
+  },
+  "Nigerian_places": {
+    "category": "Topic",
+    "description": "User wants to discuss places in Nigeria",
+    "response_english": "Sure, let's talk about places in Nigeria. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa àwọn ibi ní Nàìjíríà. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about places in Nigeria! Kí ni o fẹ́ mọ̀?"
+  },
+  "Yoruba_language": {
+    "category": "Topic",
+    "description": "User wants to discuss the Yoruba language",
+    "response_english": "Sure, let's talk about the Yoruba language. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa èdè Yorùbá. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about the Yoruba language! Kí ni o fẹ́ mọ̀?"
+  },
+  "Yoruba_culture": {
+    "category": "Topic",
+    "description": "User wants to discuss Yoruba culture",
+    "response_english": "Sure, let's talk about Yoruba culture. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa àṣà Yorùbá. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about Yoruba culture! Kí ni o fẹ́ mọ̀?"
+  },
+  "Yoruba_history": {
+    "category": "Topic",
+    "description": "User wants to discuss Yoruba history",
+    "response_english": "Sure, let's talk about Yoruba history. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ìtàn Yorùbá. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about Yoruba history! Kí ni o fẹ́ mọ̀?"
+  },
+  "Yoruba_names": {
+    "category": "Topic",
+    "description": "User wants to discuss Yoruba names",
+    "response_english": "Sure, let's talk about Yoruba names. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa orúkọ Yorùbá. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about Yoruba names! Kí ni o fẹ́ mọ̀?"
+  },
+  "Yoruba_meaning": {
+    "category": "Topic",
+    "description": "User wants to discuss the meaning of a Yoruba word",
+    "response_english": "Sure, let's talk about the meaning of a Yoruba word. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ìtumọ̀ ọ̀rọ̀ Yorùbá kan. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about the meaning of a Yoruba word! Kí ni o fẹ́ mọ̀?"
+  },
+  "Yoruba_greetings": {
+    "category": "Topic",
+    "description": "User wants to discuss Yoruba greetings",
+    "response_english": "Sure, let's talk about Yoruba greetings. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa ìkíni Yorùbá. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about Yoruba greetings! Kí ni o fẹ́ mọ̀?"
+  },
+  "Yoruba_grammar": {
+    "category": "Topic",
+    "description": "User wants to discuss Yoruba grammar",
+    "response_english": "Sure, let's talk about Yoruba grammar. What would you like to know?",
+    "response_yoruba": "Ó dáa, ẹ jẹ́ ká sọ̀rọ̀ nípa gírámà Yorùbá. Kí ni o fẹ́ mọ̀?",
+    "response_mixed": "Sure, let's talk about Yoruba grammar! Kí ni o fẹ́ mọ̀?"
+  }
+}

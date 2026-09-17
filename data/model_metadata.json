@@ -1,0 +1,17 @@
+{
+  "algorithm": "Logistic Regression (multinomial)",
+  "solver": "lbfgs",
+  "penalty": "l2",
+  "C": 1.0,
+  "max_iter": 1000,
+  "iterations_to_converge": 18,
+  "num_classes": 150,
+  "num_features": 625,
+  "feature_extraction": "TF-IDF (TfidfVectorizer, fit on training text only)",
+  "evaluation_metrics": {
+    "Accuracy": 0.9519,
+    "Precision": 0.958,
+    "Recall": 0.9519,
+    "F1-score": 0.9501
+  }
+}

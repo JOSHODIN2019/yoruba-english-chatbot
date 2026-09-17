@@ -1,0 +1,35 @@
+@import "tailwindcss";
+@import "./tokens.css";
+
+/*
+ * Maps design tokens to Tailwind utility names, using `inline` so Tailwind
+ * keeps them as live var() references (required for runtime light/dark
+ * switching) instead of baking in a value at build time.
+ */
+@theme inline {
+  --color-bg: var(--color-bg);
+  --color-surface: var(--color-surface);
+  --color-surface-hover: var(--color-surface-hover);
+  --color-surface-active: var(--color-surface-active);
+  --color-border: var(--color-border);
+
+  --color-primary: var(--color-text-primary);
+  --color-secondary: var(--color-text-secondary);
+  --color-muted: var(--color-text-muted);
+  --color-on-accent: var(--color-text-on-accent);
+
+  --color-accent: var(--color-accent);
+  --color-accent-hover: var(--color-accent-hover);
+  --color-accent-soft: var(--color-accent-soft);
+
+  --color-error: var(--color-error);
+  --color-error-soft: var(--color-error-soft);
+  --color-success: var(--color-success);
+
+  --radius-sm: var(--radius-sm);
+  --radius-md: var(--radius-md);
+  --radius-lg: var(--radius-lg);
+  --radius-full: var(--radius-full);
+
+  --font-sans: var(--font-sans);
+}

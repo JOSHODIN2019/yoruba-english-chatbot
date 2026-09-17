@@ -1,0 +1,27 @@
+fastapi==0.140.0
+uvicorn==0.51.0
+pydantic==2.12.4
+python-dotenv
+
+# ML pipeline dependencies (used once notebook logic is extracted into
+# backend/app/services/ in Stages 10-15)
+pandas
+scikit-learn
+nltk
+joblib
+
+# OpenAI-backed pipeline (primary path; falls back to the ML pipeline
+# above automatically if OPENAI_API_KEY is unset or a request fails).
+# `brotli` is required explicitly: openai's HTTP client (httpx2) prefers
+# it for decompressing responses, and falls back to `brotlicffi` if it's
+# missing - but brotlicffi's decompress() doesn't accept the
+# output_buffer_limit argument httpx2 passes, causing every real request
+# to fail with a TypeError (silently triggering this app's local-model
+# fallback instead, which looks like success but isn't). Installing the
+# real `brotli` package avoids the incompatible fallback entirely.
+openai==3.14.1
+brotli==1.2.0
+
+# Testing
+pytest
+httpx

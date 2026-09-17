@@ -1,0 +1,47 @@
+# Dependencies
+node_modules/
+frontend/node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+*.egg-info/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Build output
+frontend/dist/
+frontend/build/
+backend/dist/
+
+# Large raw source data (98MB, only needed to regenerate models/ and
+# data/*.json via scripts/extract_pipeline_artifacts.py - not needed at
+# runtime, so kept out of git). The trained model files themselves
+# (models/*.joblib) are intentionally NOT ignored below: they're small
+# (<1MB combined) and deployment needs them present without requiring a
+# build step that re-runs the full notebook pipeline against the 98MB CSV.
+data/*.csv
+data/*.parquet
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Logs
+*.log
+npm-debug.log*
+
+# Test / coverage
+coverage/
+.pytest_cache/
+htmlcov/
