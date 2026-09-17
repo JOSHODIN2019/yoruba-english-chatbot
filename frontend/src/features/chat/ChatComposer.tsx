@@ -48,7 +48,7 @@ export function ChatComposer({ onSend, disabled }: ChatComposerProps) {
           maxLength={MAX_LENGTH}
           onChange={(event) => setValue(event.target.value)}
           onKeyDown={handleKeyDown}
-          placeholder="Message in English, Yoruba, or both…"
+          placeholder="Type a message…"
           className="max-h-40 flex-1 resize-none bg-transparent py-1.5 text-sm
             text-primary placeholder:text-muted focus:outline-none"
         />

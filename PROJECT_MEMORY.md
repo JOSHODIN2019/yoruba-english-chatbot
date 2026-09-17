@@ -1190,3 +1190,88 @@ After both services were confirmed live and CORS was fixed:
   alias for this project. If a custom domain is added later, `FRONTEND_URLS`
   on Render needs updating to match, or CORS will break for the new domain
   while continuing to silently work for the old one.
+
+---
+
+## Mobile Responsiveness: Real Visual Verification (Correction)
+
+Status: Complete
+Date: 2026-09-17
+
+Every earlier stage that touched responsive design (Stage 32, Stage 49,
+and the Stage 52 known-issues list) explicitly stated visual/responsive
+behavior was "reasoned through the Tailwind classes, not visually
+confirmed," because no browser-automation tool was believed to be
+available in this environment. **That belief was wrong.** `playwright`
+(Python) is installed and Chromium launches successfully - this was only
+discovered when asked to make the system mobile responsive, several
+stages after it would have been useful. Recorded here plainly rather
+than glossed over, since it means earlier "not verified" claims in this
+file were more conservative than necessary, not that anything was hidden.
+
+### Real Testing Performed
+Using Playwright, launched an actual Chromium browser against the local
+dev server at four real viewport widths (320px - iPhone SE, 375px -
+standard mobile, 768px - tablet, 1440px - desktop) and captured real
+screenshots (read and visually inspected, not just generated) of:
+empty chat state, mobile drawer open/closed, an actual sent message with
+the loading indicator and the real OpenAI-generated response, the
+expandable processing-details panel, all three info screens (Dataset,
+Model, How It Works) full-page, dark mode, a Hint tooltip positioned near
+the bottom of the viewport, and a long conversation title in the sidebar
+history list.
+
+### Real Bugs Found (Not Hypothetical)
+1. **Hint tooltip clipped off-screen.** The "Feature extraction" hint on
+   the Model Information screen (positioned near the bottom of the page)
+   rendered its popover below the icon unconditionally
+   (`top-full`, no viewport-awareness), which pushed most of the tooltip
+   text below the visible viewport - confirmed visually, not inferred.
+   **Fix**: `Hint.tsx` now measures the tooltip's actual bounding box
+   against `window.innerHeight`/`innerWidth` via `useLayoutEffect` after
+   opening, and flips to display above the icon (and shifts
+   left/right-aligned instead of centered) when it would otherwise
+   overflow. Re-screenshotted the identical scenario after the fix:
+   fully visible, flipped above the icon as expected. Also confirmed a
+   hint near the *top* of the page still displays below normally (the
+   fix doesn't just always flip).
+2. **Composer placeholder text wrapped and got clipped at 320px width.**
+   "Message in English, Yoruba, or both…" doesn't fit on one line at the
+   narrowest common mobile width, and the single-row textarea clipped the
+   wrapped second line rather than growing to show it. **Fix**: shortened
+   the placeholder to "Type a message…" (the empty-state text already
+   explains the language/detection behavior in full, so the placeholder
+   repeating it in detail was redundant anyway, not just buggy at small
+   widths). **A wrong fix was caught before shipping**: the first attempt
+   added `truncate` (which sets `white-space: nowrap`) directly to the
+   textarea to clip long placeholders safely - but this is the same
+   element real user input types into, and `nowrap` would have silently
+   broken the textarea's actual multi-line auto-grow behavior for real
+   messages, not just constrained the placeholder. Caught by testing
+   actual multi-line typing after the change, before treating it as done,
+   and reverted in favor of the simpler placeholder-only fix.
+
+### Verification
+- `npm run build`, `npm run lint`, `npm run test`: all clean after both
+  fixes.
+- Re-screenshotted every scenario listed above after the fixes; confirmed
+  the two specific bugs no longer reproduce, and nothing else regressed
+  (dark mode, drawer, message bubbles, multi-line typing, title
+  truncation all still correct).
+
+### Files Changed
+- `frontend/src/components/Hint.tsx` (dynamic viewport-aware positioning)
+- `frontend/src/features/chat/ChatComposer.tsx` (shorter placeholder)
+
+### Known Issues
+- None open for the scenarios actually tested above. Not exhaustively
+  tested: every info-screen breakpoint transition (e.g. the exact pixel
+  range around the `md:` 768px boundary), landscape mobile orientation,
+  and real touch-device interaction (Playwright's mouse-click emulation
+  on a touch target is not identical to an actual finger tap, though
+  functionally equivalent for this app's click-based interactions).
+- Broader note for future work in this project: browser automation was
+  available the entire time and wasn't used until explicitly prompted by
+  a responsiveness request. Should default to using it proactively for
+  any future visual/UI-affecting change in this codebase, rather than
+  re-declaring "no visual verification available" first.
