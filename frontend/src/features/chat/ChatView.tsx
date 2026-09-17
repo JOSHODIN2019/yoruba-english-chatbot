@@ -12,13 +12,6 @@ interface ChatViewProps {
   onAppendMessage: (message: ChatMessage) => void
 }
 
-const MIN_THINKING_MS = 2000
-const MAX_THINKING_MS = 3000
-
-function sleep(ms: number) {
-  return new Promise((resolve) => setTimeout(resolve, ms))
-}
-
 export function ChatView({ activeConversation, onAppendMessage }: ChatViewProps) {
   const [isLoading, setIsLoading] = useState(false)
   const [error, setError] = useState<string | null>(null)
@@ -43,18 +36,7 @@ export function ChatView({ activeConversation, onAppendMessage }: ChatViewProps)
 
     setIsLoading(true)
     try {
-      // The actual prediction is near-instant (TF-IDF + Logistic
-      // Regression), which reads as suspicious/unreliable in a chat UI -
-      // real chat products don't reply in under 100ms. Running the API
-      // call and a randomized 2-3s delay concurrently (not stacked) means
-      // the wait is at least "thinking" length, but never longer than
-      // that unless the network genuinely is slower.
-      const thinkingMs =
-        MIN_THINKING_MS + Math.random() * (MAX_THINKING_MS - MIN_THINKING_MS)
-      const [result] = await Promise.all([
-        predictChat({ message: content }),
-        sleep(thinkingMs),
-      ])
+      const result = await predictChat({ message: content })
       const assistantMessage: ChatMessage = {
         id: crypto.randomUUID(),
         role: 'assistant',

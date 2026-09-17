@@ -30,7 +30,7 @@ function AppShell() {
   } = useConversationHistory()
 
   return (
-    <div className="flex h-screen bg-bg">
+    <div className="flex h-dvh bg-bg">
       <Sidebar
         isOpen={sidebarOpen}
         onClose={() => setSidebarOpen(false)}
