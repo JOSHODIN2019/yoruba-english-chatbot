@@ -1061,3 +1061,132 @@ this was caught, not assumed away).
   yesterday's green run still applies) rather than being missed.
 - Reminder still standing: the project owner should rotate the API key
   that was pasted into this conversation.
+
+---
+
+## Deployment: GitHub, Render, and Vercel
+
+Status: Complete, live-verified
+Date: 2026-09-17
+
+### GitHub
+Public repo created and pushed:
+**https://github.com/JOSHODIN2019/yoruba-english-chatbot**
+
+Before staging anything, `.gitignore` was fixed to stop excluding
+`models/*.joblib` - those files are small (<1MB combined) and
+deployment-critical (Render pulls from GitHub and has no way to
+regenerate them without the 98MB source CSV, which stays excluded).
+Before committing: reviewed the full `git status`, then grepped the
+entire staged diff for API-key-shaped patterns, then after pushing,
+queried the GitHub API tree directly (not just local git state) to
+positively confirm no `.env` file made it into the actual remote repo -
+given the repo is public, this was checked at the "what's actually on
+GitHub" level, not just "what git says is ignored locally."
+
+### Render (Backend)
+Live at: **https://yoruba-english-chatbot-backend.onrender.com**
+
+The project owner provided a Render API key directly in conversation
+(same handling as the OpenAI key: used via `RENDER_API_KEY` env var per
+command, not echoed back, project owner advised to rotate it after).
+Created via `render services create` (web service, Python runtime,
+`rootDir: backend`, free plan), matching the `render.yaml` blueprint
+written earlier. Two real deployment blockers were found and fixed
+*before* this could actually work, both confirmed with genuine testing
+rather than assumed:
+
+1. **NLTK data wasn't guaranteed to exist on a fresh instance.** This
+   dev machine already had `stopwords`/`wordnet`/`averaged_perceptron_tagger_eng`
+   downloaded from earlier work, which silently hid that nothing in the
+   app actually ensured their presence. First isolation attempt (fully
+   overriding `nltk.data.path`) gave a false pass - it decoupled
+   `nltk.download()`'s save location from the search path, so nothing
+   actually got exercised. Redone properly by isolating `HOME` instead
+   (so NLTK's default download and search locations agree, genuinely
+   simulating a fresh machine), which correctly reproduced the crash: a
+   `LookupError` for `stopwords`, in `language_detection/detector.py`, at
+   import time. **Root cause of the fix not working the first time**: a
+   new `backend/app/core/nltk_setup.py` module was written to download
+   the required data on demand, but never actually imported anywhere -
+   caught by re-running the same isolated test after writing it, not by
+   assuming a file existing was the same as it being used. Fixed by
+   importing it from both `preprocessing/pipeline.py` and
+   `language_detection/detector.py`; re-ran the isolated `HOME` test
+   again afterward and confirmed a fresh `nltk_data` directory was
+   actually created and populated before the pipeline ran successfully.
+
+2. **CORS only ever allowed localhost.** Deploying a frontend on a
+   `*.vercel.app` domain would have been silently blocked. Added
+   `FRONTEND_URLS` (comma-separated) to `app/core/config.py`, combined
+   with the existing localhost regex in `app/main.py`'s `CORSMiddleware`
+   (Starlette's `is_allowed_origin` checks the regex first, then falls
+   back to the explicit list - verified by reading Starlette's own source
+   rather than assuming both flags could combine).
+
+Environment variables (`OPENAI_API_KEY`, `OPENAI_MODEL`, `FRONTEND_URLS`)
+were set via the Render REST API directly (`PUT /v1/services/{id}/env-vars`),
+since the `render` CLI's `services update` command has no flag for env
+vars. **Real gotcha caught during verification, not assumed away**:
+updating env vars via the REST API does **not** automatically trigger a
+redeploy (confirmed by checking deploy history - only the original
+creation-time deploy existed after the env var update). The running
+process kept its stale environment until a redeploy was manually
+triggered with `render deploys create`. CORS was re-tested and confirmed
+still broken (400) after the "live"-but-stale deploy, and only started
+working after the manual redeploy actually completed - this gap would
+have been very easy to miss by trusting "deploy status: live" alone
+without re-testing the actual behavior it was supposed to fix.
+
+### Vercel (Frontend)
+Live at: **https://frontend-dusky-ten-22.vercel.app**
+
+Deployed via `vercel deploy --prod` from `frontend/`, with
+`VITE_API_BASE_URL` passed as a **build-time** variable (`-b` flag, not
+`-e`) pointing at the Render backend URL above - Vite bakes
+`import.meta.env.VITE_*` values into the bundle at build time, so a
+runtime-only env var would not have reached the compiled JavaScript.
+CLI was already authenticated (joshodin2019); linked to project
+`josh-academy/frontend` automatically.
+
+### Full Live Verification (Real Requests, Not Assumed)
+After both services were confirmed live and CORS was fixed:
+- `curl` health check and a full chat prediction directly against the
+  Render URL: both real 200 responses with correct data.
+- CORS preflight (`OPTIONS`) from `Origin: https://frontend-dusky-ten-22.vercel.app`
+  against the Render backend: 200, with the correct
+  `access-control-allow-origin` header.
+- A full `POST /api/chat/predict` with that same `Origin` header (the
+  closest `curl` can get to simulating an actual browser request from the
+  deployed frontend): 200, correct CORS header, and a genuine
+  OpenAI-generated response ("Please jọ̀ọ́ help me" -> Mixed /
+  `ask_bot_help` / "Ó dáa, màá ràn ẹ́ lọ́wọ́.").
+- The deployed frontend URL itself: fetched directly, confirmed HTTP 200
+  and the correct `<title>` tag present in the served HTML.
+
+### Files Changed
+- `.gitignore` (stopped excluding `models/*.joblib`)
+- `backend/app/core/nltk_setup.py` (new)
+- `backend/app/services/preprocessing/pipeline.py`,
+  `backend/app/services/language_detection/detector.py` (import
+  `nltk_setup`)
+- `backend/app/core/config.py` (added `FRONTEND_URLS`)
+- `backend/app/main.py` (CORS now combines the localhost regex with
+  `FRONTEND_URLS`)
+- `render.yaml` (new - Render Blueprint, for reference/reproducibility;
+  the actual service was created via CLI directly, matching this file)
+
+### Known Issues
+- None open for the deployment itself - both real blockers found were
+  fixed and re-verified live, not just assumed fixed.
+- Standing reminders (now two): rotate the OpenAI API key, and rotate the
+  Render API key - both were pasted directly into this conversation.
+- Render's free-tier web services spin down after inactivity and take
+  roughly 30-60 seconds to wake on the next request - the first request
+  after a period of no traffic will be slow. Not a bug, just worth the
+  project owner knowing about before a live demo.
+- The Vercel deployment URL used for `FRONTEND_URLS` and for verification
+  (`frontend-dusky-ten-22.vercel.app`) is the auto-assigned production
+  alias for this project. If a custom domain is added later, `FRONTEND_URLS`
+  on Render needs updating to match, or CORS will break for the new domain
+  while continuing to silently work for the old one.
