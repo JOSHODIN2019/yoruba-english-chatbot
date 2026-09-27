@@ -11,3 +11,10 @@ jobs:
     steps:
       - name: Ping backend health endpoint
         run: curl -sf --max-time 60 https://yoruba-english-chatbot-backend.onrender.com/health
+
+      - name: Warm up OpenAI connection
+        run: |
+          curl -sf --max-time 60 \
+            -X POST https://yoruba-english-chatbot-backend.onrender.com/api/chat/predict \
+            -H "Content-Type: application/json" \
+            -d '{"message":"hi"}'
